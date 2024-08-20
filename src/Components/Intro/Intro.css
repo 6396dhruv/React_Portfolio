@@ -1,0 +1,76 @@
+#intro{
+    height: calc(100vh- 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bg{
+    position:absolute;
+    top: 8rem;
+    right: 40PX;
+    z-index: -1;
+    object-fit: cover;
+    height: 65vh;
+}
+
+.introcontent{
+    height: 80vh;
+    width: 80vh;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.introname{
+    color: rgb(215, 198, 9);
+}
+
+.intropara{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.intropara:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    background: white;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 3rem;
+    font-weight: bold;
+}
+.btn:hover{
+    background: rgb(199, 183, 11);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 840px) {
+    .bg{
+        right: -10vw;
+    }
+    .introcontent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bg{
+        right: -20vh;
+    }
+}
